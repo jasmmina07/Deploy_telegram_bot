@@ -1,8 +1,9 @@
-from telegram import*
-from flask import request, Flask
+from telegram import Bot
 
-TOKEN="6442939025:AAFj8oC6_RTuzIarwoWbbGpL8-GrVJ2-s-g"
+TOKEN="6665234104:AAF_jMyABpGRuWBmHqQ5TmnFykcqyCFc_NA"
 bot=Bot(TOKEN)
-url="https://jasmina.pythonanywhere.com/webhook/"
+url="https://jasmina07.pythonanywhere.com/"
 
-print(bot.set_webhook(url))
+#print(bot.set_webhook(url))
+# print(bot.delete_webhook())
+print(bot.get_webhook_info())

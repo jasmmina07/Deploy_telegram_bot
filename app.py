@@ -6,7 +6,7 @@ TOKEN='6442939025:AAFj8oC6_RTuzIarwoWbbGpL8-GrVJ2-s-g'
 
 app = Flask(__name__)
 
-@app.route('/',methods=["POST", "GET"])
+@app.route('/webhook/',methods=["POST", "GET"])
 def main():
     if request.method == "POST":
         update = request.get_json()
